@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>NSNexus | Power BI, Power Apps, Automação e Sistemas Empresariais</title>
+  <meta name="description" content="NSNexus: desenvolvimento de sistemas, Power BI, Power Apps, Power Automate, IA e automação de processos para empresas que querem produtividade e dados em tempo real." />
+  <meta name="theme-color" content="#071226" />
+
+  <meta property="og:title" content="NSNexus | Tecnologia que conecta resultados" />
+  <meta property="og:description" content="Automação, dados, IA e sistemas inteligentes para transformar processos manuais em resultados." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div id="preloader">
+    <img src="assets/logo.svg" alt="NSNexus" />
+    <span>Carregando experiência digital...</span>
+  </div>
+
+  <canvas id="hero-canvas" aria-hidden="true"></canvas>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand" aria-label="NSNexus">
+        <img src="assets/logo.svg" alt="NSNexus" />
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="#dor">Desafios</a>
+        <a href="#servicos">Soluções</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#processo">Método</a>
+        <a href="#contato" class="nav-cta">Diagnóstico</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy" data-aos="fade-up">
+          <span class="eyebrow">
+            <i class="fa-solid fa-bolt"></i>
+            Power Platform • BI • IA • Sistemas
+          </span>
+
+          <h1>
+            Automatize processos.
+            <span>Transforme dados em resultados.</span>
+          </h1>
+
+          <p class="hero-text">
+            A NSNexus cria sistemas, dashboards, aplicativos e automações para empresas que querem
+            sair das planilhas, reduzir retrabalho e operar com inteligência.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" target="_blank" href="https://wa.me/5594991064043?text=Ol%C3%A1%20Narciso%2C%20quero%20um%20diagn%C3%B3stico%20para%20minha%20empresa.">
+              <i class="fa-brands fa-whatsapp"></i>
+              Solicitar diagnóstico
+            </a>
+            <a class="btn btn-secondary" href="#projetos">
+              Ver possibilidades
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="hero-trust">
+            <div>
+              <strong>Power BI</strong>
+              <small>Indicadores em tempo real</small>
+            </div>
+            <div>
+              <strong>Power Apps</strong>
+              <small>Apps corporativos</small>
+            </div>
+            <div>
+              <strong>Automação</strong>
+              <small>Menos tarefa manual</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual" data-aos="zoom-in" data-aos-delay="160">
+          <div class="dashboard-card floating">
+            <div class="dash-header">
+              <div>
+                <span>Centro de Controle</span>
+                <h3>Operação Inteligente</h3>
+              </div>
+              <div class="status-pill"><span></span> Online</div>
+            </div>
+
+            <div class="dash-kpis">
+              <div>
+                <small>Tempo economizado</small>
+                <strong>78%</strong>
+              </div>
+              <div>
+                <small>Fluxos ativos</small>
+                <strong>24</strong>
+              </div>
+              <div>
+                <small>Retrabalho</small>
+                <strong>-62%</strong>
+              </div>
+            </div>
+
+            <div class="chart-panel">
+              <div class="bar b1"></div>
+              <div class="bar b2"></div>
+              <div class="bar b3"></div>
+              <div class="bar b4"></div>
+              <div class="bar b5"></div>
+              <div class="bar b6"></div>
+            </div>
+
+            <div class="workflow">
+              <div><i class="fa-solid fa-file-lines"></i><span>Entrada</span></div>
+              <i class="fa-solid fa-arrow-right"></i>
+              <div><i class="fa-solid fa-gears"></i><span>Automação</span></div>
+              <i class="fa-solid fa-arrow-right"></i>
+              <div><i class="fa-solid fa-chart-line"></i><span>Resultado</span></div>
+            </div>
+          </div>
+
+          <div class="orb orb-one"></div>
+          <div class="orb orb-two"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="marquee-section" aria-label="Tecnologias">
+      <div class="marquee">
+        <div class="marquee-track">
+          <span><i class="fa-solid fa-chart-column"></i> Power BI</span>
+          <span><i class="fa-solid fa-mobile-screen"></i> Power Apps</span>
+          <span><i class="fa-solid fa-gears"></i> Power Automate</span>
+          <span><i class="fa-solid fa-database"></i> SQL</span>
+          <span><i class="fa-brands fa-microsoft"></i> Microsoft 365</span>
+          <span><i class="fa-solid fa-brain"></i> IA</span>
+          <span><i class="fa-solid fa-code"></i> Sistemas Web</span>
+          <span><i class="fa-solid fa-cloud"></i> Cloud</span>
+          <span><i class="fa-solid fa-chart-column"></i> Power BI</span>
+          <span><i class="fa-solid fa-mobile-screen"></i> Power Apps</span>
+          <span><i class="fa-solid fa-gears"></i> Power Automate</span>
+          <span><i class="fa-solid fa-database"></i> SQL</span>
+          <span><i class="fa-brands fa-microsoft"></i> Microsoft 365</span>
+          <span><i class="fa-solid fa-brain"></i> IA</span>
+          <span><i class="fa-solid fa-code"></i> Sistemas Web</span>
+          <span><i class="fa-solid fa-cloud"></i> Cloud</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pain" id="dor">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+          <span class="eyebrow">O problema</span>
+          <h2>Empresas crescem, mas os processos ficam presos no manual.</h2>
+          <p>O resultado é perda de tempo, baixa rastreabilidade e decisões baseadas em dados desatualizados.</p>
+        </div>
+
+        <div class="pain-grid">
+          <article class="pain-card" data-aos="fade-up" data-aos-delay="0">
+            <i class="fa-solid fa-table"></i>
+            <h3>Planilhas espalhadas</h3>
+            <p>Dados duplicados, versões diferentes e informações difíceis de auditar.</p>
+          </article>
+
+          <article class="pain-card" data-aos="fade-up" data-aos-delay="100">
+            <i class="fa-solid fa-hourglass-half"></i>
+            <h3>Processos lentos</h3>
+            <p>Rotinas repetitivas consomem horas da equipe e aumentam risco de erro.</p>
+          </article>
+
+          <article class="pain-card" data-aos="fade-up" data-aos-delay="200">
+            <i class="fa-solid fa-eye-slash"></i>
+            <h3>Gestão no escuro</h3>
+            <p>Sem dashboards confiáveis, decisões importantes viram tentativa e erro.</p>
+          </article>
+
+          <article class="pain-card" data-aos="fade-up" data-aos-delay="300">
+            <i class="fa-solid fa-plug-circle-xmark"></i>
+            <h3>Sistemas desconectados</h3>
+            <p>Informações isoladas impedem uma visão completa da operação.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section solutions" id="servicos">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+          <span class="eyebrow">Soluções</span>
+          <h2>Um ecossistema digital para sua operação trabalhar melhor.</h2>
+          <p>Projetos sob medida usando tecnologia certa para o seu momento.</p>
+        </div>
+
+        <div class="solutions-grid">
+          <article class="solution-card featured" data-aos="fade-right">
+            <div class="icon"><i class="fa-solid fa-chart-line"></i></div>
+            <h3>Power BI</h3>
+            <p>Dashboards executivos e operacionais com indicadores em tempo real.</p>
+            <ul>
+              <li>KPIs de produtividade</li>
+              <li>Indicadores de custo, produção e qualidade</li>
+              <li>Relatórios automáticos</li>
+            </ul>
+          </article>
+
+          <article class="solution-card" data-aos="fade-up">
+            <div class="icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+            <h3>Power Apps</h3>
+            <p>Aplicativos internos para substituir papel, planilha e formulários manuais.</p>
+          </article>
+
+          <article class="solution-card" data-aos="fade-left">
+            <div class="icon"><i class="fa-solid fa-gears"></i></div>
+            <h3>Power Automate</h3>
+            <p>Fluxos automáticos para aprovações, alertas, e-mails e integrações.</p>
+          </article>
+
+          <article class="solution-card" data-aos="fade-right">
+            <div class="icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <h3>Sistemas Web</h3>
+            <p>Portais e sistemas personalizados para gerir processos empresariais.</p>
+          </article>
+
+          <article class="solution-card" data-aos="fade-up">
+            <div class="icon"><i class="fa-solid fa-brain"></i></div>
+            <h3>Inteligência Artificial</h3>
+            <p>IA aplicada à análise, atendimento, documentos e rotinas operacionais.</p>
+          </article>
+
+          <article class="solution-card" data-aos="fade-left">
+            <div class="icon"><i class="fa-solid fa-handshake-angle"></i></div>
+            <h3>Consultoria</h3>
+            <p>Diagnóstico, arquitetura e direcionamento para transformação digital.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projetos">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+          <span class="eyebrow">Portfólio</span>
+          <h2>Modelos de solução que vendem valor antes mesmo da reunião.</h2>
+          <p>Use esta seção para inserir prints reais dos seus projetos no futuro.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card large" data-aos="zoom-in">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80" alt="Dashboard empresarial" />
+            <div class="project-content">
+              <span>Business Intelligence</span>
+              <h3>Dashboard executivo com visão em tempo real</h3>
+              <p>Indicadores integrados para acelerar decisões e eliminar relatórios manuais.</p>
+            </div>
+          </article>
+
+          <article class="project-card" data-aos="zoom-in" data-aos-delay="100">
+            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=900&q=80" alt="Equipe usando sistema" />
+            <div class="project-content">
+              <span>Aplicativos</span>
+              <h3>App operacional</h3>
+              <p>Registro, controle e rastreabilidade no celular.</p>
+            </div>
+          </article>
+
+          <article class="project-card" data-aos="zoom-in" data-aos-delay="200">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80" alt="Automação tecnológica" />
+            <div class="project-content">
+              <span>Automação</span>
+              <h3>Fluxos inteligentes</h3>
+              <p>Alertas, aprovações e integrações automáticas.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section impact" id="resultados">
+      <div class="container">
+        <div class="impact-grid">
+          <div class="impact-copy" data-aos="fade-right">
+            <span class="eyebrow">Resultados</span>
+            <h2>Tecnologia precisa gerar economia, controle e escala.</h2>
+            <p>Cada solução nasce com foco em reduzir retrabalho, melhorar decisões e criar processos mais confiáveis.</p>
+          </div>
+
+          <div class="metrics">
+            <div class="metric" data-aos="fade-up"><strong data-counter="120">0</strong><span>Automações possíveis</span></div>
+            <div class="metric" data-aos="fade-up" data-aos-delay="100"><strong data-counter="50">0</strong><span>Dashboards e relatórios</span></div>
+            <div class="metric" data-aos="fade-up" data-aos-delay="200"><strong data-counter="30">0</strong><span>Sistemas e apps</span></div>
+            <div class="metric" data-aos="fade-up" data-aos-delay="300"><strong data-counter="10">0</strong><span>Anos de experiência</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process" id="processo">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+          <span class="eyebrow">Método NSNexus</span>
+          <h2>Do diagnóstico ao processo rodando no automático.</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="step" data-aos="fade-up"><span>01</span><h3>Diagnóstico</h3><p>Entendimento das dores, dados, ferramentas e processo atual.</p></div>
+          <div class="step" data-aos="fade-up" data-aos-delay="100"><span>02</span><h3>Arquitetura</h3><p>Desenho da solução ideal: BI, App, Automação, IA ou Sistema.</p></div>
+          <div class="step" data-aos="fade-up" data-aos-delay="200"><span>03</span><h3>Desenvolvimento</h3><p>Construção com entregas parciais e validações constantes.</p></div>
+          <div class="step" data-aos="fade-up" data-aos-delay="300"><span>04</span><h3>Implantação</h3><p>Treinamento, ajustes finais e acompanhamento da adoção.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contato">
+      <div class="container">
+        <div class="contact-panel" data-aos="zoom-in">
+          <div class="contact-copy">
+            <span class="eyebrow">Vamos conversar?</span>
+            <h2>Qual gargalo você quer eliminar primeiro?</h2>
+            <p>Escolha uma opção e envie uma mensagem pronta no WhatsApp.</p>
+          </div>
+
+          <div class="contact-options">
+            <a target="_blank" href="https://wa.me/5594991064043?text=Ol%C3%A1%20Narciso%2C%20quero%20criar%20ou%20melhorar%20um%20site%20para%20minha%20empresa.">
+              <span>Criar ou melhorar meu site</span><i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a target="_blank" href="https://wa.me/5594991064043?text=Ol%C3%A1%20Narciso%2C%20preciso%20de%20um%20sistema%20sob%20medida%20para%20minha%20empresa.">
+              <span>Sistema sob medida</span><i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a target="_blank" href="https://wa.me/5594991064043?text=Ol%C3%A1%20Narciso%2C%20quero%20desenvolver%20dashboards%20em%20Power%20BI.">
+              <span>Dashboard em Power BI</span><i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a target="_blank" href="https://wa.me/5594991064043?text=Ol%C3%A1%20Narciso%2C%20quero%20automatizar%20processos%20com%20Power%20Apps%20e%20Power%20Automate.">
+              <span>Automação de processos</span><i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq">
+      <div class="container faq-grid">
+        <div data-aos="fade-right">
+          <span class="eyebrow">FAQ</span>
+          <h2>Perguntas frequentes</h2>
+          <p>Respostas rápidas para dúvidas comuns antes de começar um projeto.</p>
+        </div>
+
+        <div class="faq-list" id="faq">
+          <details data-aos="fade-up" open>
+            <summary>Preciso ter licença cara da Microsoft?</summary>
+            <p>Nem sempre. Primeiro avaliamos o seu ambiente atual e buscamos aproveitar o que sua empresa já possui.</p>
+          </details>
+          <details data-aos="fade-up" data-aos-delay="100">
+            <summary>Minha empresa é pequena. Vale a pena?</summary>
+            <p>Sim. A solução pode começar simples e evoluir conforme seu processo amadurece.</p>
+          </details>
+          <details data-aos="fade-up" data-aos-delay="200">
+            <summary>Vocês fazem sistemas além de Power Platform?</summary>
+            <p>Sim. Também desenvolvemos sistemas web, portais, integrações e soluções sob medida.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <img src="assets/logo.svg" alt="NSNexus" />
+      <p>© 2026 NSNexus. Tecnologia que conecta resultados.</p>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" target="_blank" href="https://wa.me/5594991064043?text=Ol%C3%A1%20Narciso%2C%20quero%20conhecer%20as%20solu%C3%A7%C3%B5es%20da%20NSNexus.">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span>WhatsApp</span>
+  </a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="js/main.js"></script>
+</body>
+</html>
