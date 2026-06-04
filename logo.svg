@@ -23,6 +23,6 @@
   <circle cx="50" cy="47" r="4" fill="#A855F7"/>
   <path d="M42 26.5L50 18M42 37.5L50 46" stroke="#67E8F9" stroke-width="3" stroke-linecap="round"/>
   <text x="75" y="34" fill="url(#g2)" font-family="Inter, Arial, sans-serif" font-weight="900" font-size="25" letter-spacing="-1.1">NSNexus</text>
-  <text x="76" y="51" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-weight="600" font-size="8.5" letter-spacing="2.2">DADOS • AUTOMAÇÃO • SISTEMAS</text>
+  <text x="76" y="51" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-weight="600" font-size="8.5" letter-spacing="2.2">SISTEMAS • AUTOMAÇÃO</text>
 </g>
 </svg>
