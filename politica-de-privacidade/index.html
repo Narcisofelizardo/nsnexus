@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidade | Igreja Conecta</title>
+  <meta name="description" content="Política de Privacidade do aplicativo Igreja Conecta, desenvolvido pela NSNexus." />
+  <meta name="theme-color" content="#0f172a" />
+
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --text: #0f172a;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --primary: #1e3a8a;
+      --primary-soft: #dbeafe;
+      --gold: #d4af37;
+      --shadow: 0 20px 60px rgba(15, 23, 42, 0.10);
+      --radius: 22px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(30, 58, 138, 0.12), transparent 35%),
+        radial-gradient(circle at top right, rgba(212, 175, 55, 0.14), transparent 32%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .topbar {
+      width: 100%;
+      background: rgba(15, 23, 42, 0.96);
+      color: #ffffff;
+      border-bottom: 4px solid var(--gold);
+    }
+
+    .topbar-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 18px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+    }
+
+    .brand-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--primary), #0ea5e9);
+      color: #fff;
+      box-shadow: 0 10px 30px rgba(14, 165, 233, 0.22);
+      flex: 0 0 auto;
+      font-weight: 900;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    .brand-text {
+      min-width: 0;
+    }
+
+    .brand-text strong {
+      display: block;
+      font-size: 1.02rem;
+      letter-spacing: -0.02em;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .brand-text span {
+      display: block;
+      font-size: 0.82rem;
+      color: #cbd5e1;
+    }
+
+    .badge {
+      padding: 8px 12px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 999px;
+      color: #e2e8f0;
+      font-size: 0.85rem;
+      white-space: nowrap;
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 40px 20px 70px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #ffffff, #f8fafc);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 42px;
+      margin-bottom: 22px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 220px;
+      height: 220px;
+      right: -80px;
+      top: -100px;
+      background: rgba(212, 175, 55, 0.18);
+      border-radius: 50%;
+    }
+
+    .hero small {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: var(--primary-soft);
+      color: var(--primary);
+      font-weight: 800;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      line-height: 1.08;
+      letter-spacing: -0.055em;
+      color: #0f172a;
+      max-width: 760px;
+    }
+
+    .subtitle {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.08rem;
+      max-width: 760px;
+    }
+
+    .updated {
+      margin-top: 22px;
+      padding: 14px 16px;
+      border-radius: 16px;
+      background: #f1f5f9;
+      border: 1px solid var(--border);
+      color: #334155;
+      font-size: 0.95rem;
+      display: inline-block;
+    }
+
+    .content {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .section {
+      padding: 28px 38px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .section:last-child {
+      border-bottom: 0;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 1.35rem;
+      line-height: 1.3;
+      letter-spacing: -0.02em;
+      color: #111827;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    h2 span {
+      width: 34px;
+      height: 34px;
+      border-radius: 12px;
+      display: inline-grid;
+      place-items: center;
+      background: #eff6ff;
+      color: var(--primary);
+      font-size: 0.95rem;
+      flex: 0 0 auto;
+      border: 1px solid #bfdbfe;
+    }
+
+    p {
+      margin: 0 0 12px;
+      color: #334155;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      margin: 10px 0 0;
+      padding-left: 22px;
+      color: #334155;
+    }
+
+    li {
+      margin: 7px 0;
+    }
+
+    .notice {
+      margin-top: 14px;
+      padding: 16px;
+      border-radius: 16px;
+      border: 1px solid #fde68a;
+      background: #fffbeb;
+      color: #78350f;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 14px;
+    }
+
+    .card {
+      padding: 16px;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: #f8fafc;
+    }
+
+    .card strong {
+      display: block;
+      margin-bottom: 6px;
+      color: #0f172a;
+    }
+
+    .footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 26px 18px 10px;
+      font-size: 0.95rem;
+    }
+
+    .footer strong {
+      color: #0f172a;
+    }
+
+    @media (max-width: 720px) {
+      .topbar-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .badge {
+        white-space: normal;
+      }
+
+      .container {
+        padding: 26px 14px 50px;
+      }
+
+      .hero {
+        padding: 28px 22px;
+      }
+
+      .section {
+        padding: 24px 20px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      h2 {
+        align-items: flex-start;
+      }
+    }
+
+    @media print {
+      .topbar {
+        background: #ffffff;
+        color: #000000;
+        border-bottom: 1px solid #000000;
+      }
+
+      .badge,
+      .brand-icon {
+        display: none;
+      }
+
+      body {
+        background: #ffffff;
+      }
+
+      .container {
+        padding: 0;
+      }
+
+      .hero,
+      .content {
+        box-shadow: none;
+        border: 0;
+      }
+
+      .section {
+        page-break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <div class="brand-icon" aria-hidden="true">IC</div>
+        <div class="brand-text">
+          <strong>Igreja Conecta</strong>
+          <span>Desenvolvido por NSNexus</span>
+        </div>
+      </div>
+      <div class="badge">Política de Privacidade</div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <small>Transparência e proteção de dados</small>
+      <h1>Política de Privacidade</h1>
+      <p class="subtitle">
+        Esta política descreve como o aplicativo Igreja Conecta coleta, utiliza, armazena,
+        compartilha e protege as informações dos usuários.
+      </p>
+      <div class="updated">
+        <strong>Última atualização:</strong> 10 de junho de 2026
+      </div>
+    </section>
+
+    <article class="content">
+      <section class="section">
+        <h2><span>1</span> Introdução</h2>
+        <p>
+          A presente Política de Privacidade descreve como o aplicativo <strong>Igreja Conecta</strong>,
+          desenvolvido pela <strong>NSNexus</strong>, coleta, utiliza, armazena, compartilha e protege
+          as informações dos usuários.
+        </p>
+        <p>
+          Ao utilizar o aplicativo Igreja Conecta, o usuário declara estar ciente e de acordo com os
+          termos desta Política de Privacidade.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2><span>2</span> Objetivo do aplicativo</h2>
+        <p>
+          O Igreja Conecta é um aplicativo destinado à gestão de igrejas, congregações e comunidades
+          religiosas, oferecendo funcionalidades como cadastro de membros, gestão de eventos, células,
+          ministérios, escalas, avisos, contribuições, anotações e comunicação interna.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2><span>3</span> Dados que podemos coletar</h2>
+        <p>O aplicativo poderá coletar e armazenar dados conforme o perfil e a utilização do usuário.</p>
+
+        <div class="grid">
+          <div class="card">
+            <strong>Dados de cadastro e identificação</strong>
+            <ul>
+              <li>Nome completo;</li>
+              <li>E-mail;</li>
+              <li>Telefone ou WhatsApp;</li>
+              <li>Igreja ou congregação vinculada;</li>
+              <li>Perfil de acesso;</li>
+              <li>Status do usuário no sistema.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <strong>Dados relacionados à igreja</strong>
+            <ul>
+              <li>Nome da igreja;</li>
+              <li>Responsável principal;</li>
+              <li>Endereço, cidade e estado;</li>
+              <li>Telefone, WhatsApp e e-mail do responsável;</li>
+              <li>Status da igreja;</li>
+              <li>Dados administrativos necessários ao funcionamento.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <strong>Dados operacionais</strong>
+            <ul>
+              <li>Participação em células, grupos ou ministérios;</li>
+              <li>Escalas de voluntários;</li>
+              <li>Eventos, avisos, notas e comunicados;</li>
+              <li>Anotações pessoais;</li>
+              <li>Favoritos, histórico de leitura e anotações bíblicas, quando disponíveis.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <strong>Dados financeiros</strong>
+            <ul>
+              <li>Dízimos;</li>
+              <li>Ofertas;</li>
+              <li>Doações;</li>
+              <li>Campanhas;</li>
+              <li>Contribuições;</li>
+              <li>Histórico de contribuições;</li>
+              <li>Chave Pix configurada pelo gestor da igreja.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="notice">
+          O aplicativo não deve armazenar dados de cartão de crédito, senha bancária ou qualquer
+          informação bancária sensível do usuário.
+        </div>
+
+        <p style="margin-top: 16px;">
+          Também poderão ser coletadas informações técnicas necessárias para funcionamento, segurança
+          e melhoria do aplicativo, como identificador do dispositivo, dados de sessão, logs de erro,
+          informações de desempenho e dados necessários para notificações, quando autorizadas pelo usuário.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2><span>4</span> Como usamos os dados</h2>
+        <p>Os dados coletados são utilizados para:</p>
+        <ul>
+          <li>Permitir o login e identificação do perfil de acesso;</li>
+          <li>Vincular cada usuário à sua igreja ou congregação;</li>
+          <li>Exibir informações corretas conforme o perfil do usuário;</li>
+          <li>Gerenciar membros, ministérios, células, escalas e eventos;</li>
+          <li>Enviar avisos e comunicados internos;</li>
+          <li>Registrar e organizar contribuições, quando aplicável;</li>
+          <li>Exibir a chave Pix configurada pela igreja;</li>
+          <li>Permitir anotações pessoais do usuário;</li>
+          <li>Melhorar a experiência, segurança e estabilidade do aplicativo;</li>
+          <li>Prevenir acessos indevidos ou não autorizados.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2><span>5</span> Compartilhamento de dados</h2>
+        <p>
+          A NSNexus não vende dados pessoais dos usuários.
+        </p>
+        <p>
+          Os dados poderão ser acessados apenas por usuários autorizados dentro do próprio sistema,
+          conforme o perfil de acesso:
+        </p>
+        <ul>
+          <li><strong>Super Administrador:</strong> acesso administrativo geral às igrejas cadastradas;</li>
+          <li><strong>Gestor da Igreja:</strong> acesso aos dados da igreja sob sua responsabilidade;</li>
+          <li><strong>Líder:</strong> acesso limitado aos dados permitidos pela igreja;</li>
+          <li><strong>Membro:</strong> acesso restrito às informações próprias e conteúdos liberados pela igreja.</li>
+        </ul>
+        <p>
+          Dados pessoais poderão ser compartilhados quando necessário para cumprimento de obrigação legal,
+          atendimento a ordem judicial ou solicitação de autoridade competente, proteção de direitos da
+          NSNexus, das igrejas ou dos usuários, ou prestação de serviços técnicos necessários ao
+          funcionamento do aplicativo.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2><span>6</span> Controle de acesso por igreja</h2>
+        <p>
+          Cada usuário é vinculado a uma igreja específica. Usuários vinculados a uma igreja não devem
+          visualizar, alterar ou acessar dados de outra igreja, salvo quando possuírem permissão
+          administrativa específica.
+        </p>
+        <p>
+          Caso uma igreja seja inativada, os usuários vinculados a ela poderão ter o acesso bloqueado e
+          receberão uma comunicação informando a inativação da congregação e a orientação para contato
+          com o suporte.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2><span>7</span> Segurança dos dados</h2>
+        <p>
+          Adotamos medidas técnicas e administrativas para proteger os dados contra acesso não autorizado,
+          alteração, divulgação, perda ou destruição indevida.
+        </p>
+        <ul>
+          <li>Controle de acesso por login e senha;</li>
+          <li>Sessão autenticada;</li>
+          <li>Perfis de permissão;</li>
+          <li>Restrição de acesso por igreja;</li>
+          <li>Armazenamento seguro das informações;</li>
+          <li>Monitoramento de falhas e erros.</li>
+        </ul>
+        <p>
+          Apesar dos esforços de segurança, nenhum sistema é totalmente imune a riscos. O usuário também
+          deve manter sua senha protegida e não compartilhá-la com terceiros.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2><span>8</span> Retenção e exclusão de dados</h2>
+        <p>
+          Os dados serão mantidos enquanto forem necessários para o funcionamento do aplicativo,
+          cumprimento de obrigações legais, prestação dos serviços contratados ou manutenção do histórico
+          administrativo da igreja.
+        </p>
+        <p>
+          O usuário poderá solicitar a correção, atualização ou exclusão de seus dados pessoais, quando
+          aplicável, por meio do canal de suporte informado nesta política.
+        </p>
+        <p>
+          Alguns dados poderão ser mantidos por período adicional quando necessário para cumprimento de
+          obrigações legais, segurança, auditoria ou proteção de direitos.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2><span>9</span> Crianças e adolescentes</h2>
+        <p>
+          O aplicativo pode ser utilizado por igrejas que possuam ministérios infantis, adolescentes ou
+          atividades familiares.
+        </p>
+        <p>
+          Quando houver cadastro de informações de crianças ou adolescentes, a igreja responsável deverá
+          garantir que possui autorização dos pais ou responsáveis legais para o tratamento desses dados.
+        </p>
+        <p>
+          A NSNexus recomenda que dados de menores sejam cadastrados apenas quando estritamente necessários
+          para organização das atividades da igreja e sempre com responsabilidade da instituição contratante.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2><span>10</span> Bíblia, favoritos e anotações pessoais</h2>
+        <p>
+          Caso o aplicativo disponibilize leitura bíblica, favoritos ou anotações, essas informações
+          poderão ser armazenadas para melhorar a experiência do usuário.
+        </p>
+        <p>
+          As anotações pessoais pertencem ao próprio usuário e devem ser visualizadas apenas por ele,
+          salvo se houver funcionalidade específica de compartilhamento autorizada pelo próprio usuário.
+        </p>
+        <p>
+          Versões bíblicas utilizadas no aplicativo deverão respeitar direitos autorais, licenças permitidas
+          ou APIs autorizadas.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2><span>11</span> Notificações</h2>
+        <p>O aplicativo poderá enviar notificações relacionadas a:</p>
+        <ul>
+          <li>Avisos da igreja;</li>
+          <li>Eventos;</li>
+          <li>Escalas;</li>
+          <li>Comunicados importantes;</li>
+          <li>Atualizações do sistema.</li>
+        </ul>
+        <p>
+          O usuário poderá gerenciar permissões de notificação nas configurações do próprio dispositivo.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2><span>12</span> Serviços de terceiros</h2>
+        <p>
+          O aplicativo poderá utilizar serviços de terceiros para funcionamento técnico, como hospedagem,
+          banco de dados, autenticação, armazenamento, notificações, análise de erros e desempenho.
+        </p>
+        <p>
+          Esses serviços poderão processar dados técnicos e operacionais necessários para manter o
+          aplicativo funcionando corretamente.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2><span>13</span> Direitos do usuário</h2>
+        <p>O usuário pode solicitar:</p>
+        <ul>
+          <li>Acesso aos seus dados pessoais;</li>
+          <li>Correção de dados incorretos;</li>
+          <li>Atualização de informações;</li>
+          <li>Exclusão de dados, quando aplicável;</li>
+          <li>Informações sobre o uso dos seus dados;</li>
+          <li>Revogação de consentimento, quando aplicável.</li>
+        </ul>
+        <p>
+          As solicitações serão analisadas conforme a legislação aplicável e as necessidades administrativas
+          da igreja vinculada ao usuário.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2><span>14</span> Alterações nesta política</h2>
+        <p>
+          Esta Política de Privacidade poderá ser atualizada periodicamente para refletir melhorias no
+          aplicativo, mudanças legais ou alterações nos serviços oferecidos.
+        </p>
+        <p>
+          A data da última atualização será sempre informada no início deste documento.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2><span>15</span> Contato</h2>
+        <p>
+          Em caso de dúvidas sobre esta Política de Privacidade ou sobre o tratamento de dados no aplicativo
+          Igreja Conecta, entre em contato com a equipe de suporte da NSNexus pelo site:
+        </p>
+        <p>
+          <a href="https://www.nsnexus.com.br" target="_blank" rel="noopener noreferrer">
+            www.nsnexus.com.br
+          </a>
+        </p>
+      </section>
+    </article>
+
+    <footer class="footer">
+      <p><strong>Igreja Conecta</strong> — Desenvolvido por <strong>NSNexus</strong></p>
+      <p>© 2026 NSNexus. Todos os direitos reservados.</p>
+    </footer>
+  </main>
+</body>
+</html>
